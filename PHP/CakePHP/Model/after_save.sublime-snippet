@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+public function afterSave($created){
+  parent::afterSave($created);
+
+  $0
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>as</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
