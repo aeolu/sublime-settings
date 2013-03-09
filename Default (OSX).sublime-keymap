@@ -1,4 +1,6 @@
 [
+  { "keys": ["super+alt+n"], "command": "new_file" },
+  { "keys": ["super+n"], "command": "advanced_new_file"},
   { "keys": ["ctrl+j"], "command": "join_lines" },
   { "keys": ["alt+1"], "command": "move_to_group", "args": { "group": 0 } },
   { "keys": ["alt+2"], "command": "move_to_group", "args": { "group": 1 } },
