@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-public \$has${1:count} = array(
-  '${2:association}' => array(
-    'className' => '${3:class}',
-    'foreignKey' => '${4:foreign_key}',
-    'dependent' => ${5:false}
+public \$hasOne = array(
+  '${1:association}' => array(
+    'className' => '${2:class}',
+    'foreignKey' => '${3:foreign_key}',
+    'dependent' => ${4:false}
   )
 );
 ]]></content>
