@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+drop database if exists `${1:database_name}`;
+create database `$1`;
+use `$1`;
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ddif</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+public \$belongsTo = array(
+  '${1:association}' => array(
+    'className' => '${2:class}',
+    'foreignKey' => '${3:foreign_key}'
+  )
+);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>bt</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

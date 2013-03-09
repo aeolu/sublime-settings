@@ -1,0 +1,4 @@
+.DS_Store
+*.sublime-settings
+*.last-run
+!Preferences.sublime-settings
