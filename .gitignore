@@ -2,3 +2,4 @@
 *.sublime-settings
 *.last-run
 !Preferences.sublime-settings
+Package Control.*
