@@ -2,11 +2,120 @@
   <content><![CDATA[
 <?php
 
+App::uses('Rest', 'Lib/Aeolu');
 App::uses('${2:AppController}', '${3:Controller}');
 class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
   
-  ${0}  
+  ${0}
+/*
+|--------------------------------------------------------------------------
+| TEMPLATE
+| Model:    ${4:Model}
+| Plural:   ${5:plural}
+| Singular: ${6:singluar}
+|--------------------------------------------------------------------------
+*/
 
+/*
+|--------------------------------------------------------------------------
+| CUSTOM
+|--------------------------------------------------------------------------
+*/
+
+
+/*
+|--------------------------------------------------------------------------
+| READ
+|--------------------------------------------------------------------------
+*/
+  public function index(){
+    \$this->$4->recursive = -1;
+
+    \$this->set('$5', \$this->paginate());
+  }
+
+  public function show(\$id = null){
+    \$this->$4->id = \$id;
+
+    if(!\$this->$4->exists())
+      throw new NotFoundException(__('$4 does not exist'));
+
+    \$this->set('$6', \$this->$4->read());
+  }
+  
+
+
+/*
+|--------------------------------------------------------------------------
+| CREATE
+|--------------------------------------------------------------------------
+*/
+
+  public function create(){
+    
+  }
+
+  public function store(){
+
+    \$$6 = \$this->$4->save(\$this->request->data);
+
+    if(\$$6){
+      \$this->Session->setFlash(__('$4 saved successfuly'));
+      \$this->redirect(Rest::url('show', \$$6['$4']['id']));
+    }
+    \$this->Session->setFlash('Something went wrong');
+  }
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| UPDATE
+|--------------------------------------------------------------------------
+*/
+  public function edit(\$id = null){
+    \$this->$4->id = \$id;
+
+    if(!\$this->$4->exists())
+      throw new NotFoundException(__('$4 does not exist'));
+
+    \$this->request->data = \$this->$4->read();
+  }
+
+  public function update(\$id = null){
+    \$this->$4->id = \$id;
+    \$$6 = \$this->$4->save(\$this->request->data);
+
+    if(\$$6){
+      \$this->Session->setFlash(__('$4 updated successfuly'));
+      \$this->redirect(Rest::url('show', \$id));
+    }
+    \$this->Session->setFlash('Something went wrong');
+  }
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| DELETE
+|--------------------------------------------------------------------------
+*/
+  public function delete(\$id = null){
+    \$this->$4->id = \$id;
+
+    if(!\$this->$4->exists())
+      throw new NotFoundException(__('$4 does not exist'));
+
+    if(\$this->$4->delete()){
+      \$this->Session->setFlash(__('$4 deleted'));
+      \$this->redirect(Rest::url('index'));
+    }
+    
+    \$this->Session->setFlash(__('Something went wrong'));
+    \$this->redirect(Rest::url('index'));
+  }
 }
 
 ]]></content>
