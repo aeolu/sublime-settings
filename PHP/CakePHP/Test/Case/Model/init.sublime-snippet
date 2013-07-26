@@ -6,6 +6,7 @@ App::uses('$1', 'Model');
 App::uses('Factory', 'Factory.Lib');
 class ${1:ModelName}Test extends CakeTestCase {
 
+  public $fixtures = [];
   $0
 
 /*

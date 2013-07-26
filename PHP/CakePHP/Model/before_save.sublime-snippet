@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-public function beforeSave($options = array()){
-  parent::beforeSave($options);
+public function beforeSave(\$options = []){
+  parent::beforeSave(\$options);
 
   $0
 }

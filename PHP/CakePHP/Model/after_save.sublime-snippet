@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-public function afterSave($created){
-  parent::afterSave($created);
+public function afterSave(\$created){
+  parent::afterSave(\$created);
 
   $0
 }
