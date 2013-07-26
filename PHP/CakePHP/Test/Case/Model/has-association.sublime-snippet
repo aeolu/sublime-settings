@@ -3,18 +3,18 @@
 
 
 /**
- * $2 should have a '$1' assocation with $3
+ * $1 should have a '$3' assocation with $2
  *
  *
  * @group assocation
- * Relationship: ${1:Relationship}
- * Model:        ${2:${TM_FILENAME/Test.+/\u$1/:Model}}
- * Association:  ${3:Association}
- * Title:        ${4:$1}
+ * Model:        ${1:${TM_FILENAME/Test.+/\u$1/:Model}}
+ * Association:  ${2:Association}
+ * Relationship: ${3:Relationship}
+ * Title:        ${4:$3}
  */
-function testShouldHaveA$4AssociationWith$3(){
-  \$this->assertContains('$3', array_keys(\$this->${2:Model}->getAssociated()));
-  \$this->assertEquals('$1', \$this->$2->getAssociated()['$3']);
+function testShouldHaveA$4AssociationWith$2(){
+  \$this->assertContains('$2', array_keys(\$this->$1->getAssociated()));
+  \$this->assertEquals('$3', \$this->$1->getAssociated()['$2']);
 }
 
 $0
