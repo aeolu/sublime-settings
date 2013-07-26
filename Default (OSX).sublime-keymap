@@ -5,5 +5,10 @@
   { "keys": ["alt+1"], "command": "move_to_group", "args": { "group": 0 } },
   { "keys": ["alt+2"], "command": "move_to_group", "args": { "group": 1 } },
   { "keys": ["alt+3"], "command": "move_to_group", "args": { "group": 2 } },
-  { "keys": ["alt+4"], "command": "move_to_group", "args": { "group": 3 } }
+  { "keys": ["alt+4"], "command": "move_to_group", "args": { "group": 3 } },
+  
+  { "keys": ["option+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+  { "keys": ["option+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+  { "keys": ["option+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+  { "keys": ["option+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} }
 ]
