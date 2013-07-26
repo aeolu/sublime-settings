@@ -1,8 +1,11 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"font_size": 11,
 	"ignored_packages":
 	[
+		"Composer"
 	],
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
 }
