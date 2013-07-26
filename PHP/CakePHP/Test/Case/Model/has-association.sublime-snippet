@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+
+
+/**
+ * $2 should have a '$1' assocation with $3
+ *
+ *
+ * @group assocation
+ * Relationship: ${1:Relationship}
+ * Model:        ${2:${TM_FILENAME/Test.+/\u$1/:Model}}
+ * Association:  ${3:Association}
+ * Title:        ${4:$1}
+ */
+function testShouldHaveA$4AssociationWith$3(){
+  \$this->assertContains('$3', array_keys(\$this->${2:Model}->getAssociated()));
+  \$this->assertEquals('$1', \$this->$2->getAssociated()['$3']);
+}
+
+$0
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tha</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
