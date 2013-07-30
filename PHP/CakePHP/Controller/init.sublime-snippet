@@ -2,7 +2,6 @@
   <content><![CDATA[
 <?php
 
-App::uses('Rest', 'Lib/Aeolu');
 App::uses('${2:AppController}', '${3:Controller}');
 class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
   
@@ -61,9 +60,10 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 
     if(\$$6){
       \$this->Session->setFlash(__('$4 saved successfuly'));
-      \$this->redirect(Rest::url('show', \$$6['$4']['id']));
+      \$this->redirect(Route::url('$5.show', [\$$6['$4']['id']]));
     }
-    \$this->Session->setFlash('Something went wrong');
+
+    \$this->invalidate();
   }
 
 
@@ -89,9 +89,10 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 
     if(\$$6){
       \$this->Session->setFlash(__('$4 updated successfuly'));
-      \$this->redirect(Rest::url('show', \$id));
+      \$this->redirect(Route::url('$5.show', [\$id]));
     }
-    \$this->Session->setFlash('Something went wrong');
+    
+    \$this->invalidate();
   }
 
 
@@ -110,11 +111,11 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 
     if(\$this->$4->delete()){
       \$this->Session->setFlash(__('$4 deleted'));
-      \$this->redirect(Rest::url('index'));
+      \$this->redirect(Route::url('$5.index'));
     }
     
     \$this->Session->setFlash(__('Something went wrong'));
-    \$this->redirect(Rest::url('index'));
+    \$this->redirect(Route::url('$5.index'));
   }
 }
 

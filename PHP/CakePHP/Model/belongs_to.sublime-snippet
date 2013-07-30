@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-public \$belongsTo = array(
-  '${1:association}' => array(
+public \$belongsTo = [
+  '${1:association}' => [
     'className' => '${2:class}',
     'foreignKey' => '${3:foreign_key}'
-  )
-);
+  ]
+];
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>bt</tabTrigger>

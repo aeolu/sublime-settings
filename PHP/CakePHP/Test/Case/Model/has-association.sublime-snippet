@@ -1,9 +1,7 @@
 <snippet>
   <content><![CDATA[
-
-
 /**
- * $1 should have a '$3' assocation with $2
+ * $1 has a '$3' assocation with $2
  *
  *
  * @group assocation
@@ -12,7 +10,7 @@
  * Relationship: ${3:Relationship}
  * Title:        ${4:$3}
  */
-function testShouldHaveA$4AssociationWith$2(){
+function testHasA$4AssociationWith$2(){
   \$this->assertContains('$2', array_keys(\$this->$1->getAssociated()));
   \$this->assertEquals('$3', \$this->$1->getAssociated()['$2']);
 }
