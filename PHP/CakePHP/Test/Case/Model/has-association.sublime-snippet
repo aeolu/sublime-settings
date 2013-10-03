@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
 /**
- * $1 has a '$3' assocation with $2
+ * $1 has a '$3' association with $2
  *
  *
- * @group assocation
+ * @group association
  * Model:        ${1:${TM_FILENAME/Test.+/\u$1/:Model}}
  * Association:  ${2:Association}
  * Relationship: ${3:Relationship}
