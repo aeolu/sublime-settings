@@ -2,8 +2,9 @@
   <content><![CDATA[
 <?php
 
-App::uses('${2:AppController}', '${3:Controller}');
-class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
+App::uses( '${2:AppController}', '${3:Controller}' );
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2
+{
   
   ${0}
 /*
@@ -27,19 +28,30 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 | READ
 |--------------------------------------------------------------------------
 */
-  public function index(){
+
+  /**
+   * GET /$5
+   *
+   */
+  public function index()
+  {
     \$this->$4->recursive = -1;
 
-    \$this->set('$5', \$this->paginate());
+    \$this->set( '$5', \$this->paginate() );
   }
 
-  public function show(\$id = null){
+  /**
+   * GET /$5/:id
+   *
+   */
+  public function show( \$id = null )
+  {
     \$this->$4->id = \$id;
 
     if(!\$this->$4->exists())
-      throw new NotFoundException(__('$4 does not exist'));
+      throw new NotFoundException(__( '$4 does not exist' ));
 
-    \$this->set('$6', \$this->$4->read());
+    \$this->set( '$6', \$this->$4->read() );
   }
   
 
@@ -50,17 +62,28 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 |--------------------------------------------------------------------------
 */
 
-  public function create(){
+  /**
+   * GET /$5/create
+   *
+   */
+  public function create()
+  {
     
   }
 
-  public function store(){
+  /**
+   * POST /$5
+   *
+   */
+  public function store()
+  {
 
-    \$$6 = \$this->$4->save(\$this->request->data);
+    \$$6 = \$this->$4->save( \$this->request->data );
 
     if(\$$6){
-      \$this->Session->setFlash(__('$4 saved successfuly'));
-      \$this->redirect(Route::url('$5.show', [\$$6['$4']['id']]));
+      \$id = \$$6[ '$4' ][ 'id' ];
+      \$this->Session->setFlash(__( '$4 saved successfuly' ));
+      \$this->redirect(Route::url( '$5.show', [ \$id ]) );
     }
 
     \$this->invalidate();
@@ -74,22 +97,33 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 | UPDATE
 |--------------------------------------------------------------------------
 */
-  public function edit(\$id = null){
+
+  /**
+   * GET /$5/edit
+   *
+   */
+  public function edit( \$id = null )
+  {
     \$this->$4->id = \$id;
 
-    if(!\$this->$4->exists())
-      throw new NotFoundException(__('$4 does not exist'));
+    if( !\$this->$4->exists() )
+      throw new NotFoundException(__( '$4 does not exist' ));
 
     \$this->request->data = \$this->$4->read();
   }
 
-  public function update(\$id = null){
+  /**
+   * PUT /$5/:id
+   *
+   */
+  public function update( \$id = null )
+  {
     \$this->$4->id = \$id;
-    \$$6 = \$this->$4->save(\$this->request->data);
+    \$$6 = \$this->$4->save( \$this->request->data );
 
-    if(\$$6){
-      \$this->Session->setFlash(__('$4 updated successfuly'));
-      \$this->redirect(Route::url('$5.show', [\$id]));
+    if( \$$6 ){
+      \$this->Session->setFlash(__( '$4 updated successfuly' ));
+      \$this->redirect( Route::url('$5.show', [ \$id ]) );
     }
     
     \$this->invalidate();
@@ -103,19 +137,25 @@ class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} extends $2{
 | DELETE
 |--------------------------------------------------------------------------
 */
-  public function delete(\$id = null){
+
+  /**
+   * DELETE /$5
+   *
+   */
+  public function delete( \$id = null )
+  {
     \$this->$4->id = \$id;
 
-    if(!\$this->$4->exists())
+    if( !\$this->$4->exists() )
       throw new NotFoundException(__('$4 does not exist'));
 
-    if(\$this->$4->delete()){
-      \$this->Session->setFlash(__('$4 deleted'));
-      \$this->redirect(Route::url('$5.index'));
+    if( \$this->$4->delete() ){
+      \$this->Session->setFlash(__( '$4 deleted' ));
+      \$this->redirect(Route::url( '$5.index' ));
     }
     
-    \$this->Session->setFlash(__('Something went wrong'));
-    \$this->redirect(Route::url('$5.index'));
+    \$this->Session->setFlash(__( 'Something went wrong' ));
+    \$this->redirect( Route::url( '$5.index' ) );
   }
 }
 

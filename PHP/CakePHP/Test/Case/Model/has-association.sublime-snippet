@@ -10,9 +10,12 @@
  * Relationship: ${3:Relationship}
  * Title:        ${4:$3}
  */
-function testHasA$4AssociationWith$2(){
-  \$this->assertContains('$2', array_keys(\$this->$1->getAssociated()));
-  \$this->assertEquals('$3', \$this->$1->getAssociated()['$2']);
+function testHasA$4AssociationWith$2()
+{
+  \$associations = array_keys( \$this->$1->getAssociated() );
+
+  \$this->assertContains( '$2',  \$associations );
+  \$this->assertEquals( '$3', \$this->$1->getAssociated()[ '$2' ] );
 }
 
 $0

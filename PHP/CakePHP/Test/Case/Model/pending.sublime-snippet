@@ -1,15 +1,9 @@
 <snippet>
   <content><![CDATA[
-public \$hasMany = [
-  '${1:association}' => [
-    'className' => '${2:class}',
-    'foreignKey' => '${3:foreign_key}',
-    'dependent' => ${4:false}
-  ]
-];
+\$this->markTestIncomplete( 'This test is pending' );
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>hm</tabTrigger>
+  <tabTrigger>pen</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>

@@ -15,6 +15,13 @@ class ${1:${TM_FILENAME/Test.+/\u$1/:ModelName}}Test extends CakeTestCase {
 |--------------------------------------------------------------------------
 */
 
+  function testHasAValidFactory()
+  {
+    \$factory = Factory::build( '' );
+
+    \$this->assertNotEmpty( \$factory->save() );
+  }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -57,10 +64,11 @@ class ${1:${TM_FILENAME/Test.+/\u$1/:ModelName}}Test extends CakeTestCase {
  *
  * @return void
  */
-  public function setUp() {
+  public function setUp()
+  {
     parent::setUp();
 
-    \$this->$1 = ClassRegistry::init('$1');
+    \$this->$1 = ClassRegistry::init( '$1' );
   }
 
 
@@ -69,8 +77,9 @@ class ${1:${TM_FILENAME/Test.+/\u$1/:ModelName}}Test extends CakeTestCase {
  *
  * @return void
  */
-  public function tearDown() {
-    unset(\$this->$1);
+  public function tearDown()
+  {
+    unset( \$this->$1 );
 
     parent::tearDown();
   }
