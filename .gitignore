@@ -3,3 +3,4 @@
 *.last-run
 !Preferences.sublime-settings
 Package Control.*
+linters/*
