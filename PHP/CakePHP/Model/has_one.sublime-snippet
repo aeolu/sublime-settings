@@ -1,12 +1,12 @@
 <snippet>
   <content><![CDATA[
-public \$hasOne = array(
-  '${1:association}' => array(
-    'className' => '${2:class}',
+public \$hasOne = [
+  '${1:association}' => [
+    'className'  => '${2:class}',
     'foreignKey' => '${3:foreign_key}',
-    'dependent' => ${4:false}
-  )
-);
+    'dependent'  => ${4:false}
+  ]
+];
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>ho</tabTrigger>

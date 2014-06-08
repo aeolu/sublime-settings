@@ -2,9 +2,9 @@
   <content><![CDATA[
 public \$hasMany = [
   '${1:association}' => [
-    'className' => '${2:class}',
+    'className'  => '${2:class}',
     'foreignKey' => '${3:foreign_key}',
-    'dependent' => ${4:false}
+    'dependent'  => ${4:false}
   ]
 ];
 ]]></content>

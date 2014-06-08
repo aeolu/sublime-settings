@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-public function beforeFilter(){
-  parent::beforeFilter();
+public function beforeFilter(\$options = []){
+  parent::beforeFilter(\$options);
 
   $0
 }

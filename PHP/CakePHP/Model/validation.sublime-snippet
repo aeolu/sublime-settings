@@ -2,11 +2,11 @@
   <content><![CDATA[
 '${1:field}' => [
   '${2:rule_name}'   => [
-    'rule'    => [ '$2' ],
+    'rule'    => ['$2'],
     'message' => '${3:Error Message}',
     //'allowEmpty' => false,
     //'required'   => false,
-    //'last'       => fa;se, // Stop validation after this rule
+    //'last'       => false, // Stop validation after this rule
     //'on'         => 'create' // Limit validation to 'create' or 'update' operations
   ],
 ]$0
