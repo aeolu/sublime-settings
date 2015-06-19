@@ -23,7 +23,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Facebook/Facebook.tmTheme",
+	"color_scheme": "Packages/User/Themes/fb-material-design.tmTheme",
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
