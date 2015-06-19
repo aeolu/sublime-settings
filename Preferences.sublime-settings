@@ -1,7 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
-    "auto_indent": true,
+	"auto_indent": true,
 	"binary_file_patterns":
 	[
 		".git/",
@@ -22,13 +22,13 @@
 		"*.zip"
 	],
 	"bold_folder_labels": true,
-    "caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-    "default_encoding": "UTF-8",
-    "detect_indentation": true,
-    "draw_indent_guides": true,
-    "draw_white_space": true,
-    "enable_tab_scrolling": false,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Facebook/Facebook.tmTheme",
+	"default_encoding": "UTF-8",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"draw_white_space": true,
+	"enable_tab_scrolling": false,
 	"folder_exclude_patterns":
 	[
 		".sass-cache",
@@ -57,7 +57,7 @@
 	],
 	"scroll_past_end": true,
 	"smart_indent": true,
-    "tab_completion": true,
+	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
