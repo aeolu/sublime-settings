@@ -5,7 +5,7 @@
 	"binary_file_patterns":
 	[
 		".git/",
-		"Vendor/",
+		"vendor/",
 		"vendor/",
 		"*.jpg",
 		"*.jpeg",
@@ -23,7 +23,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Themes/fb-material-design.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/SolarSooty.tmTheme",
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
@@ -40,15 +40,15 @@
 	[
 		"gray_antialias"
 	],
-	"font_size": 16,
+	"font_size": 14,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
-	"margin": 4,
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
+	"margin": 0,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -60,9 +60,11 @@
 	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
 	"vintage_ctrl_keys": true,
-	"vintage_lines.force_mode": true,
+	// "vintage_lines.force_mode": true,
 	"vintage_start_in_command_mode": true,
-	"word_wrap": true
+	"word_wrap": false
 }

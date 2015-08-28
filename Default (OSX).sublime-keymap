@@ -10,6 +10,23 @@
   { "keys": ["option+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
   { "keys": ["option+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
   { "keys": ["option+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+  { "keys": ["control+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
-  { "keys": ["0", "-"], "command": "insert_snippet", "args": { "contents": "->"}}
-]
+  // Vintage IMAP like keymaps.
+  { "keys": ["0", "-"], "command": "insert_snippet", "args": { "contents": "->"}},
+  { "keys": ["-", "="], "command": "insert_snippet", "args": { "contents": "=>"}},
+
+  { "keys": ["control+]"], "command": "goto_definition_scope" },
+  { "keys": ["control+o"], "command": "goto_definition_scope" },
+  { "keys": [",", "t", "e"], "command": "expand_fqcn" },
+  { "keys": [",", "t", "i"], "command": "find_use" },
+
+  { "keys": [",", "c", " "], "command": "toggle_comment", "args": { "block": false } },
+
+  // Origami (Splitting panes)
+  { "keys": ["control+w", "|"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
+  { "keys": ["control+w", "-"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
+
+  { "keys": ["control+a", "x", "l"], "command": "destroy_pane", "args": {"direction": "right"} },
+  { "keys": ["control+a", "x", "j"], "command": "destroy_pane", "args": {"direction": "down"} },
+  { "keys": ["control+a", "x", "x"], "command": "destroy_pane", "args": {"direction": "self"} }, ]
