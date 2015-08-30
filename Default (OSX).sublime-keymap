@@ -13,6 +13,7 @@
   { "keys": ["control+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
   // Vintage IMAP like keymaps.
+  { "keys": ["control+e"], "command": "toggle_side_bar" },
   { "keys": ["0", "-"], "command": "insert_snippet", "args": { "contents": "->"}},
   { "keys": ["-", "="], "command": "insert_snippet", "args": { "contents": "=>"}},
 
@@ -26,7 +27,23 @@
   // Origami (Splitting panes)
   { "keys": ["control+w", "|"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
   { "keys": ["control+w", "-"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
-
   { "keys": ["control+a", "x", "l"], "command": "destroy_pane", "args": {"direction": "right"} },
   { "keys": ["control+a", "x", "j"], "command": "destroy_pane", "args": {"direction": "down"} },
-  { "keys": ["control+a", "x", "x"], "command": "destroy_pane", "args": {"direction": "self"} }, ]
+  { "keys": ["control+a", "x", "x"], "command": "destroy_pane", "args": {"direction": "self"} },
+  { "keys": ["control+a", "-"], "command": "zoom_pane", "args": {"fraction": 0.9} },
+  { "keys": ["control+a", "="], "command": "unzoom_pane", "args": {} },
+
+  // Add vim bindings to the Tree View.
+  { "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ]
+  },
+  { "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+      [ {"key": "control", "operand": "sidebar_tree"} ]
+  },
+  { "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+      [ {"key": "control", "operand": "sidebar_tree"} ]
+  },
+  { "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+      [ {"key": "control", "operand": "sidebar_tree"} ]
+  },
+]
