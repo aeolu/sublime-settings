@@ -1,11 +1,17 @@
 <snippet>
   <content><![CDATA[
-${1:public} function ${2:function_name}(${3:\$param = ''}){
-  $0  
+/**
+ * ${1:description}
+ *
+ * @return ${5:void}
+ */
+${2:public} function ${3:function_name}(${4:\$param = ''})
+{
+    $0
 }
 ]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>fn</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.php</scope>
+  <description>function</description>
 </snippet>

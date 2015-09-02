@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * ${1}
+ *
+ * @package     ${2}
+ * @author      Jaggy Gauran <poke@jag.gy>
+ * @license     ${3:http://opensource.org/licenses/MIT The MIT License (MIT)}
+ * @version     Release: ${4:0.1.0}
+ * @link        ${5:http://github.com/}${6}
+ * @since       Class available since Release ${7:0.1.0}
+ */$0
+]]></content>
+  <tabTrigger>dbc</tabTrigger>
+  <scope>source.php</scope>
+  <description>Full class documentation</description>
+</snippet>

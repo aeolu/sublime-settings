@@ -17,20 +17,19 @@
   { "keys": ["0", "-"], "command": "insert_snippet", "args": { "contents": "->"}},
   { "keys": ["-", "="], "command": "insert_snippet", "args": { "contents": "=>"}},
 
+  { "keys": [",", "c", " "], "command": "toggle_comment", "args": { "block": false } },
+
+  // PHP Companion
   { "keys": ["control+]"], "command": "goto_definition_scope" },
-  { "keys": ["control+o"], "command": "goto_definition_scope" },
+  { "keys": [",", "s", "p"], "command": "insert_php_constructor_property" },
   { "keys": [",", "t", "e"], "command": "expand_fqcn" },
   { "keys": [",", "t", "i"], "command": "find_use" },
-
-  { "keys": [",", "c", " "], "command": "toggle_comment", "args": { "block": false } },
 
   // Origami (Splitting panes)
   { "keys": ["control+w", "|"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
   { "keys": ["control+w", "-"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
-  { "keys": ["control+a", "x", "l"], "command": "destroy_pane", "args": {"direction": "right"} },
-  { "keys": ["control+a", "x", "j"], "command": "destroy_pane", "args": {"direction": "down"} },
-  { "keys": ["control+a", "x", "x"], "command": "destroy_pane", "args": {"direction": "self"} },
-  { "keys": ["control+a", "-"], "command": "zoom_pane", "args": {"fraction": 0.9} },
+  { "keys": [";", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} },
+  { "keys": ["control+a", "-"], "command": "zoom_pane", "args": {"fraction": 2.95} },
   { "keys": ["control+a", "="], "command": "unzoom_pane", "args": {} },
 
   // Add vim bindings to the Tree View.

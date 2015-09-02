@@ -50,6 +50,8 @@
 	"line_padding_top": 6,
 	"margin": 0,
 	"overlay_scroll_bars": "enabled",
+	"remember_full_screen": true,
+	"remember_open_files": false,
 	"rulers":
 	[
 		80,
@@ -57,8 +59,6 @@
 	],
 	"scroll_past_end": true,
 	"smart_indent": true,
-    "remember_full_screen": true,
-	"remember_open_files": false,
 	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Material-Theme.sublime-theme",
