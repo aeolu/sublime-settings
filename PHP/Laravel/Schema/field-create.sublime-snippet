@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+\$table->${1:string}('$2')${3:->nullable()};
+]]></content>
+  <tabTrigger>sfc</tabTrigger>
+  <scope>source.php</scope>
+  <description>Create Schema</description>
+</snippet>
