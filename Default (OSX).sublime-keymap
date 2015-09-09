@@ -8,6 +8,9 @@
   { "keys": ["control+w"], "command": "unbound" },
   { "keys": ["control+j"], "command": "unbound" },
 
+  // Create PHPUnit Spec
+  { "keys": [",", "t", "w"], "command": "phpunit_create_specification" },
+
   // Pane switching
   { "keys": ["control+w", "k"], "command": "travel_to_pane", "args": {"direction": "up"} },
   { "keys": ["control+w", "l"], "command": "travel_to_pane", "args": {"direction": "right"} },
@@ -24,8 +27,8 @@
   // PHP Companion
   { "keys": ["control+]"], "command": "goto_definition_scope" },
   { "keys": [",", "s", "p"], "command": "insert_php_constructor_property" },
-  { "keys": [",", "t", "e"], "command": "expand_fqcn" },
-  { "keys": [",", "t", "i"], "command": "find_use" },
+  { "keys": [",", "c", "e"], "command": "expand_fqcn" },
+  { "keys": [",", "c", "i"], "command": "find_use" },
 
   // Origami (Splitting panes)
   { "keys": ["control+w", "|"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
