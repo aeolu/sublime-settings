@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<script lang="es">
+</script>
+
+<template lang="jade">
+</template>
+
+<style lang="stylus">
+</style>
+]]></content>
+    <tabTrigger>vuec</tabTrigger>
+</snippet>
