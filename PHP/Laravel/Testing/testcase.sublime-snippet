@@ -2,7 +2,7 @@
   <content><![CDATA[
 <?php
 
-// use Illuminate\Foundation\Testing\{DatabaseMigrations, DatabaseTransactions};
+// use Illuminate\Foundation\Testing\\{DatabaseMigrations, DatabaseTransactions};
 
 class ${TM_FILENAME/(.+)\..+|.*/$1/:name} extends TestCase
 {
@@ -12,7 +12,7 @@ class ${TM_FILENAME/(.+)\..+|.*/$1/:name} extends TestCase
 }
 
 ]]></content>
-  <tabTrigger>clstc</tabTrigger>
+  <tabTrigger>tc</tabTrigger>
   <!-- <scope>source.php</scope> -->
   <description>Laravel Test</description>
 </snippet>
