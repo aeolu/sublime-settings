@@ -27,7 +27,6 @@
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
-	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
 	"folder_exclude_patterns":
 	[
@@ -46,6 +45,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Markdown"
 	],
 	"line_padding_bottom": 6,
 	"line_padding_top": 6,
@@ -59,6 +59,7 @@
 		120
 	],
 	"scroll_past_end": true,
+	"show_panel_on_build": false,
 	"smart_indent": true,
 	"tab_completion": true,
 	"tab_size": 4,
