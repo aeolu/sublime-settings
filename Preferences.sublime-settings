@@ -22,7 +22,6 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Colorsublime - Themes/ILMShell.tmTheme",
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
@@ -34,12 +33,12 @@
 		"tmp",
 		"node_modules/"
 	],
-	"font_face": "Fira Code",
+	"font_face": "Inconsolata",
 	"font_options":
 	[
 		"gray_antialias"
 	],
-	"font_size": 15,
+	"font_size": 16,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
@@ -47,8 +46,8 @@
 	[
 		"Markdown"
 	],
-	"line_padding_bottom": 6,
-	"line_padding_top": 6,
+	"line_padding_bottom": 12,
+	"line_padding_top": 12,
 	"margin": 0,
 	"overlay_scroll_bars": "enabled",
 	"remember_full_screen": true,
