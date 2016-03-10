@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+\$${1:variable}->shouldReceive('$2')->andReturn($3);$0
+]]></content>
+  <tabTrigger>sr</tabTrigger>
+  <scope>source.php</scope>
+  <description>Mock Should Receive</description>
+</snippet>

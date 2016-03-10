@@ -38,7 +38,7 @@
 	[
 		"gray_antialias"
 	],
-	"font_size": 17,
+	"font_size": 18,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
