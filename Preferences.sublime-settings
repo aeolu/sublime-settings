@@ -44,7 +44,8 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Markdown"
+		"Markdown",
+		"Makefile"
 	],
 	"line_padding_bottom": 12,
 	"line_padding_top": 12,
