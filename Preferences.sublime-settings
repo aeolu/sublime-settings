@@ -31,21 +31,22 @@
 	[
 		".sass-cache",
 		"tmp",
-		"node_modules/"
+		"node_modules/",
+		"storage/"
 	],
 	"font_face": "Inconsolata",
 	"font_options":
 	[
 		"gray_antialias"
 	],
-	"font_size": 18,
+	"font_size": 17,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Makefile"
+		"Makefile",
+		"Markdown"
 	],
 	"line_padding_bottom": 12,
 	"line_padding_top": 12,
