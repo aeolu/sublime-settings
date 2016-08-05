@@ -6,6 +6,9 @@
     "color_scheme": "Packages/Colorsublime - Themes/snappy-light.tmTheme",
     "draw_centered": true,
     "word_wrap": true,
-    "wrap_width": 100,
-    "scroll_past_end": false,
+    "wrap_width": 80,
+    "rulers": [],
+    "line_padding_bottom": 4,
+    "line_padding_top": 4,
+    "gutter": false
 }
