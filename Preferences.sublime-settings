@@ -33,8 +33,8 @@
 		"node_modules/",
 		"storage/"
 	],
-	"font_face": "Inconsolata-dz for Powerline",
-	"font_size": 14,
+	"font_face": "Operator Mono",
+	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
