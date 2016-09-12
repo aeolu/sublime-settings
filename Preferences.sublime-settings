@@ -33,7 +33,7 @@
 		"node_modules/",
 		"storage/"
 	],
-	"font_face": "Operator Mono",
+	"font_face": "Fira Code",
 	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
