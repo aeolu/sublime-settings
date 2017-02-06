@@ -24,6 +24,14 @@
 
   { "keys": [",", "c", " "], "command": "toggle_comment", "args": { "block": false } },
 
+  { "keys": ["control+g"], "command": "exit_insert_mode",
+    "context":
+    [
+        { "key": "setting.command_mode", "operand": false },
+        { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+
   // PHP Companion
   { "keys": ["control+]"], "command": "goto_definition_scope" },
   { "keys": [",", "s", "p"], "command": "insert_php_constructor_property" },
