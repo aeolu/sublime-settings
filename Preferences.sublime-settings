@@ -40,8 +40,8 @@
 	"ignored_packages":
 	[
 	],
-	"line_padding_bottom": 10,
-	"line_padding_top": 10,
+	"line_padding_bottom": 12,
+	"line_padding_top": 12,
 	"margin": 0,
 	"overlay_scroll_bars": "enabled",
 	"remember_full_screen": true,
