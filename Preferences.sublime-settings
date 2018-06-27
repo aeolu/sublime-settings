@@ -21,7 +21,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 	"default_encoding": "UTF-8",
 	"detect_indentation": true,
 	"draw_indent_guides": false,
@@ -32,7 +32,7 @@
 		"node_modules/",
 		"storage/"
 	],
-	"font_face": "Hasklig",
+	"font_face": "Operator Mono",
 	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
@@ -49,14 +49,15 @@
 	"remember_open_files": false,
 	"rulers":
 	[
-		80, 120
+		80,
+		120
 	],
 	"scroll_past_end": true,
 	"show_panel_on_build": false,
 	"smart_indent": true,
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "ayu-dark.sublime-theme",
+	"theme": "ayu-mirage.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
